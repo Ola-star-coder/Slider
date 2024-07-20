@@ -1,41 +1,22 @@
-let nextBtn = document.querySelector('.next');
-let prevBtn = document.querySelector('.prev');
-let slider = document.querySelector('.slider');
-let sliderList =  slider.querySelector('.slider .list');
-let thumbnail = document.querySelector('.slider .thumbnail');
-let thumbnailItems = thumbnail.querySelectorAll('.item');
+//Navigation bar button
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
 
- thumbnail.appendChild(thumbnailItems[0]);
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+});
 
-// function for next button 
-
-nextBtn.onclick = function(){
-    moveSlider('next');
-};
-
-//function for prev button
-
-prevBtn.onclick = function(){
-    moveSlider('prev');
-};
-
-function moveSlider(direction){
- let sliderItems = sliderList.querySelectorAll('.item');
- if(direction === 'next'){
-    sliderList.appendChild(sliderItems[0]);
-    thumbnail.appendChild(thumbnailItems[0]);
-    slider.classList.add('next');
- }else{
-    sliderList.prepend(sliderItems[sliderItems.length - 1]);
-    thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1]);
-    slider.classList.add('prev');
- }
-
- slider.addEventListener('animationend', function(){
-    if(direction === 'next'){
-        slider.classList.remove('next');
-    } else{
-        slider.classList.remove('prev');
-    };
- }, {once:true});
-};
+//swiper for homepage
+var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });

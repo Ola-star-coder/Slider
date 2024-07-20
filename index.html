@@ -1,110 +1,112 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
+<!Coding by CodingLab | www.codinglabweb.com  -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider at the moment</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
     <header>
-        <nav>
-         <a href="" class="active">Home</a>
-         <a href="">About</a>
-         <a href="">Gallery</a>
-         <a href="">sales</a>
-        </nav>
-    </header>
-
-    <div class="slider">
-
-     <div class="list">
-
-    <div class="item">
-    <img src="images/slider 1.jpg" alt="sandwich image">
-    <div class="content">
-        <div class="title">Fast Foods</div>
-        <div class="type">Sandwich</div>
-        <div class="description">A sandwich is a dish typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or
-        more generally any dish wherein bread serves as a container or wrapper for another food type</div>
-        <div class="button">
-            <button>SEE MORE</button>
-        </div>
-    </div>
-    </div>
-
-    <div class="item">
-        <img src="images/slider 2.jpg" alt="sandwich image">
-        <div class="content">
-            <div class="title">Fast Foods</div>
-            <div class="type">Sushi</div>
-            <div class="description">Toast is sliced bread that has been browned by radiant heat. The browning is the result of a Maillard reaction altering
-            the flavor of the bread and making it firmer. The firm surface is easier to spread toppings on and the warmth can help
-            butter reach its melting poin</div>
-            <div class="button">
-                <button>SEE MORE</button>
+        <a href="#" class="brand">Space</a>
+        <div class="menu-btn">
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Explore</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="item">
-        <img src="images/slider 3.jpg" alt="sandwich image">
-        <div class="content">
-            <div class="title">Fast Foods</div>
-            <div class="type">Pizza</div>
-            <div class="description">Pizza[a] is a traditional Italian dish typically consisting of a flat base of leavened wheat-based dough topped with
-            tomato, cheese, and other ingredients, baked at a high temperature, traditionally in a wood-fired oven</div>
-        <div class="button">
-            <button>SEE MORE</button>
-        </div>
-        </div>
-    </div>
-
-    <div class="item">
-        <img src="images/slider 4.jpg" alt="sandwich image">
-        <div class="content">
-            <div class="title">Fast Foods</div>
-            <div class="type">Burger</div>
-            <div class="description">Hamburgers are typically associated with fast-food restaurants and diners, but are also sold at various other
-            restaurants, including more expensive high end establishments. There are numerous international and regional variations
-            of hamburger.</div>
-        <div class="button">
-            <button>SEE MORE</button>
-        </div>
-        </div>
-    </div>
-
-    </div>
     
+    <section class="main swiper mySwiper">
 
-    <div class="thumbnail">
+        <div class="wrapper swiper-wrapper">
 
-        <div class="item">
-            <img src="images/slider 4.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/slider 3.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/slider 2.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/slider 1.jpg" alt="">
-        </div>
-    </div>
+            <div class="slide swiper-slide">
 
-     <div class="nextPrevArrows">
-        <button class="prev"><</button>
-        <button class="next">></button>
-     </div>
+                <img src="images/slider 1.jpg" alt="" class="image" />
+                <div class="image-data">
 
-    </div>
-    
+                    <span class="text">Fast Foods 🥖</span>
+
+                    <h2>Enjoy The best BreadCrumbs</h2>
+
+                    <a href="#" class="button">About Us</a>
+
+                </div>
+
+            </div>
+
+            <div class="slide swiper-slide">
+
+                <img src="images/slider 2.jpg" alt="" class="image" />
+
+                <div class="image-data">
+
+                    <span class="text">Fast Foods</span>
+
+                    <h2>Enjoy the best Sushi  </h2>
+
+                    <a href="#" class="button">About Us</a>
+
+                </div>
+
+            </div>
+
+            <div class="slide swiper-slide">
+
+                <img src="images/slider 3.jpg" alt="" class="image" />
+
+                <div class="image-data">
+
+                    <span class="text">Making Our Pizza for customers</span>
+                    <h2>
+                       Taste Pizza Like no other
+                    </h2>
+
+                    <a href="#" class="button">About Us</a>
+
+                </div>
+
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="images/slider 4.jpg" alt="" class="image" />
+                <div class="image-data">
+                    <span class="text">Yummy Yummy!!!</span>
+                    <h2>
+                       Top class Burger
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script src="index.js"></script>
 </body>
+
 </html>
