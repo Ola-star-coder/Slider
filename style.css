@@ -139,6 +139,7 @@ header .navigation .navigation-items a:hover:before {
 .main {
     height: 100vh;
     width: 100%;
+    cursor: grab;
 }
 
 .wrapper,
@@ -146,6 +147,12 @@ header .navigation .navigation-items a:hover:before {
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+.image-data p {
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
 }
 
 .slide {
@@ -165,6 +172,7 @@ header .navigation .navigation-items a:hover:before {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    filter: brightness(70%);
 }
 
 .slide .image-data {
@@ -184,9 +192,11 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .image-data h2 {
+    padding: 10px 0px;
     font-size: 45px;
     font-weight: 600;
     color: #fff;
+    font-family: "Ga Maamli", sans-serif;
 }
 
 a.button {
