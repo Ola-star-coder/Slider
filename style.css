@@ -27,6 +27,7 @@ header .brand {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: "Ga Maamli", sans-serif;
 }
 
 header .brand:hover {
@@ -63,7 +64,8 @@ header .navigation .navigation-items a:hover:before {
     background: #09a6d4;
 }
 
-@media screen and (max-width:768px) {
+/* media for header and navigation */
+@media screen and (max-width:1085px) {
     header {
         padding: 12px 20px;
     }
@@ -136,10 +138,15 @@ header .navigation .navigation-items a:hover:before {
 
 }
 
+/* main slider */
 .main {
     height: 100vh;
     width: 100%;
     cursor: grab;
+}
+
+.main:active {
+    cursor: grabbing;
 }
 
 .wrapper,
@@ -153,6 +160,8 @@ header .navigation .navigation-items a:hover:before {
     color: #fff;
     text-align: center;
     line-height: 30px;
+    font-size: 19px;
+    font-family: "Rubik Bubbles", system-ui;
 }
 
 .slide {
@@ -189,6 +198,7 @@ header .navigation .navigation-items a:hover:before {
     font-size: 20px;
     font-weight: 400;
     color: #fff;
+    font-family: "Chewy", system-ui;
 }
 
 .image-data h2 {
@@ -196,8 +206,11 @@ header .navigation .navigation-items a:hover:before {
     font-size: 45px;
     font-weight: 600;
     color: #fff;
-    font-family: "Ga Maamli", sans-serif;
+    cursor: auto;
+    font-family: "Merienda", cursive;
 }
+
+
 
 a.button {
     display: inline-block;
@@ -254,12 +267,58 @@ a.button:hover {
     background-color: #c87e4f;
 }
 
-@media screen and (max-width: 768px) {
+/* media for other tablet or other screens within 1000px */
+@media screen and (max-width: 755px) {
+    .image-data p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+/* media for pagination */
+@media screen and (max-width: 1085px) {
     .nav-btn {
         visibility: hidden;
     }
 
     .swiper-pagination-bullet {
         visibility: visible;
+    }
+}
+
+
+/* media for phone */
+@media screen and (max-width:587px) {
+    .image-data p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px;
+    }
+
+    .image-data h2 {
+        padding: 10px 0px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        cursor: auto;
+        font-family: "Merienda", cursive;
+    }
+}
+
+/* media for smaller phones */
+@media screen and (max-width:414px) {
+    .image-data p {
+        font-size: 12px;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    .image-data h2 {
+        padding: 10px 10px;
+        font-size: 28px;
+        font-weight: 600;
+        color: #fff;
+        cursor: auto;
+        font-family: "Merienda", cursive;
     }
 }
