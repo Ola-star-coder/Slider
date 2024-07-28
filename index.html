@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Image Slider</title>
-     
+
+    <!-- AOS in css(animation on scroll in css) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- ga+maamli font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +55,7 @@
         </div>
     </header>
 
-    
+    <!-- landing page which is slider -->
     <section class="main swiper mySwiper">
 
         <div class="wrapper swiper-wrapper">
@@ -60,6 +63,7 @@
             <div class="slide swiper-slide">
 
                 <img src="images/slider 1.jpg" alt="" class="image" />
+
                 <div class="image-data">
 
                     <span class="text">Fast Foods 🥖</span>
@@ -138,11 +142,38 @@
         <div class="swiper-pagination"></div>
     </section>
 
+    <section class="first-section">
+
+        <div class="div-first-section">
+
+        <div class="first-section-word">
+
+            <h2>Smashing <span class="span2">Burger</span> Standard</h2>
+            <h3>SMASHING IT!!!</h3>
+            <a href="#" class="button">Order Now</a>
+            
+        </div>  
+        
+        <div class="first-section-image">
+            <img src="images/first section burger.jpg" alt="burger image">
+        </div>
+        
+        </div>
+
+    </section>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script src="index.js"></script>
+
+     <!--aos(animation on scroll)  -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

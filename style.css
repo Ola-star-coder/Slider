@@ -322,3 +322,80 @@ a.button:hover {
         font-family: "Merienda", cursive;
     }
 }
+
+/* first section of the website (The one above is the hero/landing section) */
+
+.first-section {
+    background-color: #5F6F65;
+    /* color: #fff; */
+}
+
+.div-first-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.first-section-word {
+    padding-top: 5rem;
+}
+
+.first-section-word h2 {
+    font-size: 6rem;
+    font-family: "Rubik Bubbles", system-ui;
+}
+
+.span2 {
+    color: #c87e4f;
+    font-family: "Ga Maamli", sans-serif;
+}
+
+@media screen and (max-width:1320px) {
+    .first-section-image img {
+        width: 100%;
+    }
+
+    .first-section-image {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width:1123px) {
+    .first-section-word h2 {
+        font-size: 4.5rem;
+        font-family: "Rubik Bubbles", system-ui;
+    }
+}
+
+@media screen and (max-width:1002px) {
+    .div-first-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+    }
+
+    .first-section {
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 0px;
+    }
+
+    .first-section-word {
+        padding-top: 0rem;
+    }
+
+    .first-section-image img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:454px) {
+    .first-section-word h2 {
+        font-size: 3rem;
+        font-family: "Rubik Bubbles", system-ui;
+    }
+
+    .first-section-word {
+        padding-top: 0rem;
+    }
+}
