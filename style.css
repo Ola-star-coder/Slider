@@ -6,9 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
+    /* position: fixed; */
     z-index: 999;
     position: absolute;
     top: 0;
