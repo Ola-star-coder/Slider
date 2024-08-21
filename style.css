@@ -402,6 +402,126 @@ a.button:hover {
 }
 
 
+.menu {
+    background: #f8f6f6;
+    padding: 2rem;
+}
+
+.menu-head {
+    text-align: center;
+}
+
+.menu-head h3 {
+    font-family: "Merienda", cursive;
+    color: #ffbd39;
+}
+
+.menu-head h2 {
+    font-size: 30px;
+}
+
+
+.menu-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-item {
+    padding: 2rem;
+}
+
+
+.item-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-box h2 {
+    text-align: center;
+}
+
+.item-box p {
+    text-align: center;
+}
+
+.item-box .icons {
+    text-align: center;
+    color: #ffc62b;
+    padding-top: 10px;
+}
+
+
+.image-box:hover img {
+    transform: scale(1.05);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s linear;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1068px) {
+    .menu-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
+        background: #f8f6f6;
+        padding: 1rem;
+    }
+
+    .menu-item {
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (max-width:610px) {
+    .item-box h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:538px) {
+
+    .menu-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item-box h2 {
+        text-align: center;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .item-box .icons {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .menu-item {
+        padding: 2rem 0rem;
+    }
+
+}
+
+
+
+
+
+
 
 /* shake shake section styling */
 
