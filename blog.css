@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+}
+
+
+
+.blog-text {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.blog-text h2 {
+    /* letter-spacing: 2px; */
+    /* font-variant: small-caps; */
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.blog-text h3 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+}
+
+.blog-text p {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.blog-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.blog-text button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #D91656;
+    color: #fff;
+    transition: .5s;
+}
+
+.blog-text button:last-child {
+    background: #fff;
+    color: #000;
+    transition: 1s;
+}
+
+.blog-text button:hover {
+    background: #fff;
+    color: #000;
+    transition: 1s;
+}
+
+.blog-text button:hover:last-child {
+    background: #D91656;
+    color: #fff;
+    transition: .5s;
+}
+
+@media screen and (min-width:1078px) {
+    .blog-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10rem 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .blog-text {
+        color: #fff;
+        text-align: left;
+        padding: 4rem 1rem;
+        gap: 10px;
+    }
+
+    .blog-text h2 {
+        letter-spacing: 2px;
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+
+    .blog-text button {
+        width: 150px;
+    }
+
+    .button-together {
+        display: flex;
+    }
+
+    .blog-img img {
+        width: 80%;
+        margin: 1rem 2rem;
+        border-radius: 8px;
+    }
+
+    .blog-text p {
+        text-align: left;
+        padding-bottom: 10px;
+        line-clamp: 20px;
+    }
+}
+
+@media screen and (min-width:1508px) {
+    .blog-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10rem 5rem;
+    }
+
+    .blog-text {
+        padding: 7rem 5rem;
+        gap: 10px;
+    }
+
+    .blog-text h2 {
+        font-size: 2.5em;
+    }
+
+    .blog-img img {
+        width: 90%;
+        margin: 1rem 2rem;
+    }
+
+    .blog-text button {
+        width: 200px;
+    }
+
+    .blog-text h3 {
+        font-size: 2em;
+        padding-bottom: 30px;
+    }
+}
+
+.ham-blog-1 {
+    padding: 1rem;
+    color: #fff;
+    background: #800000;
+    /* The Other background is for light mode  */
+    /* background: #982B1C; */
+}
+
+.ham-blog-1-img img {
+    width: 100%;
+}
+
+.ham-blog-1-text {
+    text-align: center;
+    /* padding: 1rem; */
+}
+
+.ham-blog-1-text h2 {
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    font-family: "Merienda", cursive;
+}
+
+.ham-blog-1-text p {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.ham-blog-1 button {
+    padding: 20px;
+    margin-top: 10px;
+    background: #0d0d0d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 70%;
+    transition: 1s;
+}
+
+.ham-blog-1 button:hover {
+    background: #fff;
+    color: #000;
+    transition: .5s;
+}
+
+@media screen and (min-width:579px) {
+    .ham-blog-1-text p {
+        text-align: center;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width:1040px) {
+    .ham-blog-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .ham-blog-1-text {
+        padding: 5rem 3rem;
+        text-align: left;
+    }
+
+    .ham-blog-1-text p {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .ham-blog-1-img img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .ham-blog-1-img {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .ham-blog-1-text {
+        padding: 6rem 2rem;
+        text-align: left;
+    }
+}
