@@ -11,7 +11,7 @@ body {
 }
 
 
-
+/* Blog Section */
 .blog-text {
     color: #fff;
     text-align: center;
@@ -146,6 +146,7 @@ body {
     }
 }
 
+/* Hamburger section */
 .ham-blog-1 {
     padding: 1rem;
     color: #fff;
@@ -231,5 +232,236 @@ body {
     .ham-blog-1-text {
         padding: 6rem 2rem;
         text-align: left;
+    }
+}
+
+/* MORE CARD */
+.more-card {
+    padding: 1rem;
+    color: #fff;
+}
+
+.more-card-head {
+    text-align: center;
+    padding: 1rem;
+}
+
+.more-card-head h2 {
+    font-variant: small-caps;
+    padding: 20px 0px;
+    font-size: 19px;
+}
+
+.more-card-head p {
+    font-size: 16px;
+}
+
+.more-card-grid {
+    padding: 1rem;
+}
+
+.more-card-grid-body {
+    padding: 1rem 0rem;
+}
+
+.more-card-grid-text {
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.more-card-grid-text h3 {
+    font-size: 13px;
+}
+
+.more-card-grid-text button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #D91656;
+    cursor: pointer;
+}
+
+.more-card-grid-text button:hover {
+    background: #fff;
+    color: #000;
+    transition: .5s;
+}
+
+.more-card-grid-body .more-card-grid-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:678px) {
+    .more-card-grid {
+        text-align: center;
+        padding: 1rem 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width:1034px) {
+
+    .more-card-grid-body .more-card-grid-img img {
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    .more-card-grid-text button {
+        width: 300px;
+        margin-top: 20px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        background: #D91656;
+        cursor: pointer;
+    }
+
+    .more-card-head {
+        text-align: center;
+        padding: 1rem 10rem;
+    }
+
+    .more-card-grid-text h3 {
+        font-size: 18px;
+    }
+
+    .more-card-grid-body {
+        padding: 1rem 0rem;
+    }
+
+    .more-card {
+        padding: 1rem 4rem;
+        color: #fff;
+    }
+}
+
+/* smash section */
+.redeem {
+    padding: 1rem;
+    background: #800000;
+    /* The Other background is for light mode  */
+    /* background: #982B1C; */
+}
+
+.redeeem-body-img img {
+    width: 90%;
+    padding-top: 2rem;
+}
+
+.redeem-text {
+    padding: 1rem 0rem;
+}
+
+.redeem-text h3 {
+    padding: 1rem 0rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.redeem-text button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    background: #D91656;
+    cursor: pointer;
+}
+
+@media screen and (min-width:919px) {
+    .redeem-text {
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (min-width:1030px) {
+    .redeem {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .redeeem-body-img img {
+        width: 90%;
+        padding-top: 3rem;
+    }
+
+    .redeem-text {
+        padding: 4rem;
+    }
+
+    .redeem-text h3 {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .redeem-text button {
+        width: 250px;
+        background: #D91656;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:1339px) {
+    .redeem-text {
+        padding: 8rem 5rem;
+    }
+}
+
+/* Smash section */
+
+.smash-cash {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background: #D91656;
+}
+
+.smash-cash-text {
+    padding: 1rem;
+}
+
+.smash-cash-text h2 {
+    padding: 10px;
+}
+
+.smash-cash-text p {
+    text-align: left;
+}
+
+.smash-cash-img img {
+    width: 90%;
+    border-radius: 10px;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width:1060px) {
+    .smash-cash {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        text-align: center;
+        color: #fff;
+        background: #D91656;
+    }
+
+    .smash-cash-text {
+        padding: 2rem 1rem;
+    }
+
+    .smash-cash-text h2 {
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1339px) {
+    .smash-cash-text {
+        padding: 5rem 1rem;
     }
 }
