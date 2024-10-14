@@ -512,7 +512,7 @@ body {
 }
 
 .faq.active .answer {
-    max-height: 300px;
+    max-height: 600px;
 }
 
 i {
